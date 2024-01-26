@@ -9,8 +9,10 @@
       crossorigin="anonymous"
     />
 
-    <link rel="stylesheet" href="./reset.css" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./src/Styles/vars.css" />
+    <link rel="stylesheet" href="./src/Styles/main-content.css" />
+    <link rel="stylesheet" href="./src/Styles/reset.css" />
+    <link rel="stylesheet" href="./src/Styles/sidebar-footer.css" />
     <title>Spotify clone</title>
   </head>
   <body>
@@ -19,7 +21,7 @@
         <div class="logo">
           <a href="">
             <img
-              src="assets/icons/logo-spotify.png.crdownload"
+              src="src/assets/icons/logo-spotify.png.crdownload"
               alt="logo do Spotify"
             />
           </a>
@@ -87,5 +89,45 @@
     </div>
   </div>
 </div>
+
+<main>
+  <div class="main-container">
+    <header class="header__navigation">
+      <div class="navigation">
+        <button class="arrow-left"><img src="./src/assets/icons/small-left.png.crdownload" alt="seta esquerda"></button>
+        <button class="arrow-right"><img src="./src/assets/icons/small-right.png.crdownload" alt="seta direita"></button>
+      </div>
+
+        <div class="header__search">
+          <img 
+          src="./src/assets/icons/search.png.crdownload" 
+          alt="">
+          <input 
+          id="search-input" 
+          type="text"
+          maxlength="800" 
+          placeholder="O que você quer ouvir?"
+          >
+        </div>
+
+        <div class="header__login">
+          <button class="subscribe">Inscreva-se</button>
+          <button class="login">Entrar</button>
+        </div>
+
+    </header>
+  </div>
+</main>
+
+  <footer class="disclaimer-premium">
+    <div class="text">
+      <p class="disclaimer-premium__title">Testar o Premium de graça</p>
+      <p class="disclaimer-premium__subtitle">Inscreva-se para curtir música ilimitada e podcasts só com alguns anúncios. Não precisa de cartão de crédito.</p>
+    </div>
+    <div class="button">
+      <button type="button">Inscreva-se grátis</button>
+    </div>
+  </footer>
+
   </body>
 </html>

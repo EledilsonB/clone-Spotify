@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="./src/Styles/vars.css" />
     <link rel="stylesheet" href="./src/Styles/main-content.css" />
     <link rel="stylesheet" href="./src/Styles/reset.css" />
-    <link rel="stylesheet" href="./src/Styles/sidebar-footer.css" />
+    <link rel="stylesheet" href="./src/Styles/sidebar.css" />
+    <link rel="stylesheet" href="./src/Styles/footer.css" />
     <title>Spotify clone</title>
   </head>
   <body>
@@ -62,9 +63,7 @@
       </div>
 
       <section class="section-playlist">
-
         <div class="section-playlist__content">
-      
           <span class="text title">Crie sua primeira playlist</span>
            <span class="text subtitle">É fácil, vamos te ajudar.</span>
            <button class="section-playlist__button">
@@ -94,8 +93,14 @@
   <div class="main-container">
     <header class="header__navigation">
       <div class="navigation">
-        <button class="arrow-left"><img src="./src/assets/icons/small-left.png.crdownload" alt="seta esquerda"></button>
-        <button class="arrow-right"><img src="./src/assets/icons/small-right.png.crdownload" alt="seta direita"></button>
+        <button class="arrow-left">
+          <img 
+          src="./src/assets/icons/small-left.png.crdownload" 
+          alt="seta esquerda"></button>
+        <button class="arrow-right">
+          <img 
+          src="./src/assets/icons/small-right.png.crdownload" 
+          alt="seta direita"></button>
       </div>
 
         <div class="header__search">
@@ -106,6 +111,8 @@
           id="search-input" 
           type="text"
           maxlength="800" 
+          autocorrect="off"
+          spellcheck="false"
           placeholder="O que você quer ouvir?"
           >
         </div>
@@ -114,19 +121,167 @@
           <button class="subscribe">Inscreva-se</button>
           <button class="login">Entrar</button>
         </div>
-
     </header>
+
+    <!-- Cards Playlists -->
+    <div class="playlist-container">
+      <div id="result-playlists">
+        <div class="playlist">
+          <h1 id="greeting"></h1>
+          <h2 class="session">Navegar por todas as seções</h2>
+        </div>
+
+        <!-- list item 1 -->
+        <div class="offer__scroll-container">
+          <div class="offer__list">
+            <section class="offer__list-item">
+
+              <!-- CARD 1 -->
+              <a href="" class="cards">
+                <div class="cards card-1">
+                  <img src="./src/assets/playlists/1.jpeg.crdownload" alt="">
+                  <span>Boas festas</span>
+                </div>
+              </a>
+
+              <!-- CARD 2 -->
+              <a href="" class="cards">
+                <div class="cards card-2">
+                  <img src="./src/assets/playlists/2.png.crdownload" alt="">
+                  <span>Feitos para você</span>
+                </div>
+              </a>
+
+              <!-- CARD 3 -->
+              <a href="" class="cards">
+                <div class="cards card-3">
+                  <img src="./src/assets/playlists/3.jpeg.crdownload" alt="">
+                  <span>Lançamentos</span>
+                </div>
+              </a>
+
+              <!-- CARD 4 -->
+              <a href="" class="cards">
+                <div class="cards card-4">
+                  <img src="./src/assets/playlists/4.jpeg.crdownload" alt="">
+                  <span>Creators</span>
+                </div>
+              </a>
+
+              <!-- CARD 5 -->
+              <a href="" class="cards">
+                <div class="cards card-5">
+                  <img src="./src/assets/playlists/5.jpeg.crdownload" alt="">
+                  <span>Para Treinar</span>
+                </div>
+              </a>
+
+              <!-- CARD 6 -->
+              <a href="" class="cards">
+                <div class="cards card-6">
+                  <img src="./src/assets/playlists/6.jpeg.crdownload" alt="">
+                  <span>Podcasts</span>
+                </div>
+              </a>
+
+              <!-- CARD 7 -->
+              <a href="" class="cards">
+                <div class="cards card-7">
+                  <img src="./src/assets/playlists/7.jpeg.crdownload" alt="">
+                  <span>Sertanejo</span>
+                </div>
+              </a>
+
+              <!-- CARD 8 -->
+              <a href="" class="cards">
+                <div class="cards card-8">
+                  <img src="./src/assets/playlists/8.jpeg.crdownload" alt="">
+                  <span>Samba e Pagode</span>
+                </div>
+              </a>
+
+              <!-- CARD 9 -->
+              <a href="" class="cards">
+                <div class="cards card-9">
+                  <img src="./src/assets/playlists/9.jpeg.crdownload" alt="">
+                  <span>Funk</span>
+                </div>
+              </a>
+
+              <!-- CARD 10 -->
+              <a href="" class="cards">
+                <div class="cards card-10">
+                  <img src="./src/assets/playlists/10.jpeg.crdownload" alt="">
+                  <span>MPB</span>
+                </div>
+              </a>
+
+              <!-- CARD 11 -->
+              <a href="" class="cards">
+                <div class="cards card-11">
+                  <img src="./src/assets/playlists/11.jpeg.crdownload" alt="">
+                  <span>Rock</span>
+                </div>
+              </a>
+
+              <!-- CARD 12 -->
+              <a href="" class="cards">
+                <div class="cards card-12">
+                  <img src="./src/assets/playlists/12.jpeg.crdownload" alt="">
+                  <span>Hip Hop</span>
+                </div>
+              </a>
+
+              <!-- CARD 13 -->
+              <a href="" class="cards">
+                <div class="cards card-13">
+                  <img src="./src/assets/playlists/13.jpeg.crdownload" alt="">
+                  <span>Indie</span>
+                </div>
+              </a>
+
+              <!-- CARD 14 -->
+              <a href="" class="cards">
+                <div class="cards card-14">
+                  <img src="./src/assets/playlists/14.jpeg.crdownload" alt="">
+                  <span>Relax</span>
+                </div>
+              </a>
+
+              <!-- CARD 15 -->
+              <a href="" class="cards">
+                <div class="cards card-15">
+                  <img src="./src/assets/playlists/15.jpeg.crdownload" alt="">
+                  <span>Música Latina</span>
+                </div>
+              </a>
+            </section>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
   </div>
 </main>
 
   <footer class="disclaimer-premium">
-    <div class="text">
-      <p class="disclaimer-premium__title">Testar o Premium de graça</p>
-      <p class="disclaimer-premium__subtitle">Inscreva-se para curtir música ilimitada e podcasts só com alguns anúncios. Não precisa de cartão de crédito.</p>
-    </div>
+    <div class="container-footer">
+      <div class="text">
+        <p class="disclaimer-premium__title">Testar o Premium de graça</p>
+        <p class="disclaimer-premium__subtitle">Inscreva-se para curtir música ilimitada e podcasts só com alguns anúncios. Não precisa de cartão de crédito.</p>
+      </div>
+
     <div class="button">
-      <button type="button">Inscreva-se grátis</button>
+      <button type="button">
+        <span class="btn-msg">
+          Inscreva-se grátis
+        </span>
+      </button>
     </div>
+  </div>
   </footer>
 
   </body>

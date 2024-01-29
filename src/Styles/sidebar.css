@@ -4,28 +4,27 @@ body {
 }
 
 .sidebar {
-  position: absolute;
+  position: fixed;
   display: flex;
   flex-direction: column;
-  vertical-align: baseline;
-  position: fixed;
   gap: 8px;
   top: 0;
   left: 0;
   height: 100%;
+  margin-top: .6rem;
 }
 
 .sidebar-navigation {
   background-color: #121212;
   border-radius: 8px;
-  padding: 16px 0 0 16px;
+  padding: 1rem 0 0 1rem;
 }
 
 .sidebar-navigation .logo {
   background: #121212;
   display: flex;
   border-radius: 8px;
-  padding: 16px 0 0 16px;
+  padding: 16px 0 0 8px;
 }
 
 .sidebar-navigation .logo img {
@@ -64,7 +63,7 @@ body {
   color: #b3b3b3;
   font-weight: 600;
   font-size: 14px;
-  margin-top: 10px;
+  margin-top: .3rem;
 }
 
 .library .library__content {
@@ -91,7 +90,7 @@ body {
   font-size: 20px;
   margin-right: 10px;
   font-weight: 300;
-  padding-right: 8px;
+  padding-right: .4rem;
 }
 
 .library .library__button .fa-book {
@@ -99,7 +98,7 @@ body {
 }
 
 .library .library__content .fa-plus {
-  margin: 24px 10px;
+  margin: 1.25rem 1rem 1.25rem 7rem;
   cursor: pointer;
 }
 

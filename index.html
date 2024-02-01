@@ -108,17 +108,19 @@
           <img 
           src="./src/assets/icons/search.png.crdownload" 
           alt=""
-          for="search-input"
           id="search"
           >
+         
           <input 
           id="search-input" 
+          class="input-search"
           type="text"
           maxlength="800" 
           autocorrect="off"
           spellcheck="false"
           placeholder="O que você quer ouvir?"
           >
+       
         </div>
 
         <div class="header__login">
@@ -264,7 +266,29 @@
         </div>
       </div>
 
+      <div id="result-artist" class="hidden">
+        <div class="grid-container">
+          <div class="artist-card">
+            <div class="card-img">
+              <img
+               src="" alt=""
+               id="artist-img" 
+               class="artist-img"
+               >
+               <div class="play">
+                <span class="fa da-solid fa-play"></span>
+              </div>
+            </div>
 
+            <div class="card-text">
+            <a title="" class="vst" href=""></a>
+            <span class="artist-name" id="artist-name"></span>
+            <span class="artist-categorie" id="artist-categorie"></span>
+          </div>
+
+          </div>
+        </div>
+      </div>+
 
     </div>
 
@@ -288,7 +312,7 @@
   </div>
   </footer>
 
-  <script src="./src/Scrips/script.js"></script>
+  <script src="./src/Scrips/search.js"></script>
   <script src="./src/Scrips/input-search.js"></script>
   </body>
 </html>
